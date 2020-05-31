@@ -1,0 +1,27 @@
+{
+  "name": "mern-starter-template",
+  "version": "1.0.0",
+  "description": "A simple mern template with authentication to get started with projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Isagani Esteron",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^5.5.0",
+    "helmet": "^3.22.0",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.16",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "password-validator": "^5.0.3",
+    "validator": "^13.0.0"
+  }
+}
