@@ -5,8 +5,6 @@ const passport = require("passport")
 const app = express()
 const config = require("./config/config")
 const helmet = require('helmet')
-const expressValidator = require('express-validator')
-
 
 /**
  * Controllers
@@ -17,8 +15,8 @@ userController = require('./controllers/users')
  * MongoDB
  */
 mongoose.connect(config.mongoURI, { useNewUrlParser: true })
-    .then(() => console.log("MongoDB successfully connected"))
-    .catch(err => console.log(err))
+	.then(() => console.log("MongoDB successfully connected"))
+	.catch(err => console.log(err))
 
 
 /**
@@ -27,8 +25,6 @@ mongoose.connect(config.mongoURI, { useNewUrlParser: true })
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(helmet())
-// app.use(expressValidator())
-
 
 /**
  * Passport
